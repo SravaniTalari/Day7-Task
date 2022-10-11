@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Person Class to hold all the details
+        class Person{
+            constructor(name,age,height,weight,color,gender,address){
+                this.name=name;
+                this.age=age;
+                this.height=height;
+                this.weight=weight;
+                this.color=color;
+                this.gender=gender;
+                this.address=address
+            }
+        }
+
+        var p=new Person("Sravani",23,5.3,50,"white","Female","Anantapur");
+        
+      console.log(p);
+      console.log(p.name,p.address)
+
+    </script>
+</body>
+</html>

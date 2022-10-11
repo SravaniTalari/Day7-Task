@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Circle{
+
+            constructor(radius=1.0 , color="red"){
+                this.radius=radius;
+                this.color=color;
+            }
+
+            getRadius()
+            {
+                return this.radius;
+            }
+            setRadius(radius)
+            {
+                this.radius=radius;
+            }
+
+            getColor()
+            {
+                return this.color;
+            }
+            setColor(color)
+            {
+                this.color=color;
+            }
+
+            toString()
+            {
+                var str = `Circle[radius=${this.radius},color=${this.color} ]`;
+                return str;
+            }
+
+            getArea()
+            {
+                return 3.14*this.radius*this.radius;
+            }
+
+            getCircumference()
+            {
+                return 2*3.14*this.radius;
+            }
+        }
+
+        var c1=new Circle();
+        console.log("radius : "+c1.getRadius());
+        console.log("Color : "+c1.getColor());
+        console.log("Area : "+c1.getArea());
+        console.log("Circumference : "+c1.getCircumference());
+
+        var c2=new Circle(10);
+        console.log("radius : "+c2.getRadius());
+        console.log("Color : "+c2.getColor());
+        console.log("Area : "+c2.getArea());
+        console.log("Circumference : "+c2.getCircumference());
+
+        var c3=new Circle(10,"yellow");
+        console.log("radius : "+c3.getRadius());
+        console.log("Color : "+c3.getColor());
+        console.log("Area : "+c3.getArea());
+        console.log("Circumference : "+c3.getCircumference());
+        
+    </script>
+</body>
+</html>
